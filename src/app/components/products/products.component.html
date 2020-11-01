@@ -1,0 +1,13 @@
+<div class="mb-5">
+    <button class="btn btn-primary" (click)="addProduct()">Add</button>
+</div>
+
+<div>
+    <ul *ngFor='let product of products' class="collection">
+        <li class="collection-item d-absilute">
+            <strong>{{product.name}}</strong>
+            ({{product.quantity}})
+            <button class="btn-small red pull-right" (click)="deletePrtoduct()">Delete</button>
+        </li>
+    </ul>
+</div>
